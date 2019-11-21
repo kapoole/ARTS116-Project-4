@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-y: hidden;
+}
+
+
+::-webkit-scrollbar-track {
+    border-radius: 50px;
+}
+
+
+#background {
+    /* width: 3000px;
+    height: 100vh;
+    background-color: rgb(7,56,189);
+    background: linear-gradient(0deg, rgba(7,56,189,1) 0%, rgba(55,217,255,1) 88%, rgba(218,249,255,1) 100%); */
+    background-color: black;
+    height: 100vh;
+    width: 3000px;
+}
+
+.small-star {
+    width: 15px;
+    height: auto;
+}
+
+#star-1 {
+    position: absolute;
+    top: 50vh;
+    left: 300px;
+}
+
+#star-2 {
+    position: absolute;
+    top: 20vh;
+    left: 2500px;
+}
+
+/*
+    Idea: Use constellations to represent each entity
+    - twitter constellatoin
+    - facebook constellation
+    - email constellation
+
+    What would represent the data chnaging:
+        - stars becoming brighter?
+        - stars moving and bumping into eachother (with lines connected could be really difficult)
+        - constellation could be in shape of company logo
+
+    also use planets, shooting starts, black holes
+
+*/
