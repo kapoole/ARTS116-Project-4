@@ -411,6 +411,63 @@ body {
 
 }
 
+
+/*
+*      GOOGLE
+*           - each flash is 10,000 photos
+*           - .13 seconds between flashes
+*           - = 75,000 google searches per second
+*/
+
+#google-cont {
+    background-image: url("imgs/google-const-1.png");
+    background-size: 500px 500px;
+
+    width: 500px;
+    height: 500px;
+
+    position: absolute;
+    top: 35%;
+    left: 1200px;
+
+    transform: rotate(180deg);
+    border-radius: 50px;
+
+    opacity: .3;
+
+    animation: google .13s infinite;
+    animation-delay: .13s;
+
+}
+
+#google-cont:hover {
+
+    background-image: url("imgs/google-const-1h.png");
+    background-size: 500px 500px;
+    /* background-color: black;*/
+
+    transform: scale(1) rotate(180deg);
+
+    opacity: 1;
+
+    animation: none;
+}
+
+@keyframes google {
+    0% {
+        opacity: .3;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .3;
+    }
+
+}
+
 /*
     Idea: Use constellations to represent each entity
     - twitter constellatoin
