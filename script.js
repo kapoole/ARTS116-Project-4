@@ -11,3 +11,5 @@ if (performance.navigation.type == 1)
 {
     console.info( "This page is not reloaded");
 }
+
+console.log("How do I fix this css problem?");
