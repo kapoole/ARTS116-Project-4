@@ -291,6 +291,66 @@ body {
 }
 
 /*
+*      INSTAGRAM
+*           - each flash is 10,000 photos
+*           - 10.5 seconds between flashes
+*           - = 950 photos uploaded per second
+*/
+
+#insta-cont {
+    background-image: url("imgs/insta-const-1.png");
+    background-size: 300px 300px;
+
+    width: 300px;
+    height: 300px;
+
+    position: absolute;
+    top: 5%;
+    left: 1700px;
+
+    transform: rotate(45deg);
+    border-radius: 50px;
+
+    opacity: .5;
+
+    animation: insta 10.5s infinite;
+    animation-delay: 10.5s;
+
+}
+
+#insta-cont:hover {
+
+    background-image: url("imgs/insta-const-1h.png");
+    background-size: 300px 300px;
+    /* background-color: black;*/
+
+    transform: scale(1) rotate(45deg);
+
+    opacity: 1;
+
+    animation: none;
+}
+
+@keyframes insta {
+    0% {
+        opacity: .5;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    2%{
+        opacity: .5;
+    }
+
+    100% {
+        opacity: .5;
+    }
+
+}
+
+/*
     Idea: Use constellations to represent each entity
     - twitter constellatoin
     - facebook constellation
