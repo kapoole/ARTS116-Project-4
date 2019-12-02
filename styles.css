@@ -31,6 +31,7 @@ body {
     position: absolute;
     top: 50vh;
     left: 300px;
+
 }
 
 #star-2 {
@@ -47,6 +48,13 @@ body {
     width: 30px
 }
 
+/*
+*      TWITTER
+*           - each flash is 10,000 tweets
+*           - 1.25 seconds between flashes
+*           - = 8,000 tweets per second
+*/
+
 #twitter-cont {
     background-image: url("imgs/twitter-const-4.png");
     background-size: 250px 250px;
@@ -60,6 +68,12 @@ body {
 
     transform: rotate(20deg);
     border-radius: 50px;
+
+    opacity: .5;
+
+    animation: twitter 1.25s infinite;
+    animation-delay: 1.25s;
+
 }
 
 #twitter-cont:hover {
@@ -70,8 +84,29 @@ body {
 
     transform: scale(1) rotate(20deg);
 
-    /* border-radius: 50px;
-    box-shadow: 0px 0px 40px 10px rgba(255,255,255,0.32); */
+    opacity: 1;
+
+    animation: none;
+}
+
+@keyframes twitter {
+    0% {
+        opacity: .5;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    10% {
+        opacity: .5;
+    }
+
+
+    100% {
+        opacity: .5;
+    }
+
 }
 
 /*
@@ -90,4 +125,46 @@ body {
     New Idea: Add setInterval Time to display errorTimeOut module as joke
         - force login... (fake of course)
 
+*/
+
+/*
+
+STATS:
+    do by the per second stat
+    every x number things happen star flash
+    x = 10,000?
+
+    https://www.internetlivestats.com/one-second/
+    https://www.zettasphere.com/mind-boggling-stats-for-1-second-of-internet-activity/
+    https://www.omnicoreagency.com/snapchat-statistics/
+
+Twitter 
+    6,000 tweets per second
+    350,000 tweets per minute
+    500M tweets per day
+
+    8,751 tweets per second (1st link)
+    5,700 tweets per second (2nd link) outdated
+
+Facebook
+    54,977 posts per second (2nd link)
+
+Instagram
+    956 photos per second (1st link)
+    694 photos per second (2nd link)
+
+SnapChat
+    ~20,000 videos shared per second (3rd link)
+
+Email
+    2,859,696 sent per second (1st link)
+    3,400,000 sent per second (2nd link)
+
+Youtube
+    1 hour (3600 seconds) of video posted per second
+
+
+Google Searches
+    78,932 per second (1st link)
+    68,542 per second (2nd link)
 */
