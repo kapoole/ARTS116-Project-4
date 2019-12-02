@@ -5,22 +5,25 @@
 
 html {
     overflow-y: hidden;
+
 }
 
+body {
+    background-image: url("imgs/starry-back.jpg");
+    background-repeat: repeat;
+    background-size: 50% 50%;
+    
 
-::-webkit-scrollbar-track {
-    border-radius: 50px;
+    
 }
 
 
 #background {
-    /* width: 3000px;
-    height: 100vh;
-    background-color: rgb(7,56,189);
-    background: linear-gradient(0deg, rgba(7,56,189,1) 0%, rgba(55,217,255,1) 88%, rgba(218,249,255,1) 100%); */
-    background-color: black;
-    height: 100vh;
+    background-color: transparent;
+    
     width: 3000px;
+    height: 100vh;
+    
 }
 
 .small-star {
@@ -38,6 +41,41 @@ html {
     position: absolute;
     top: 20vh;
     left: 2500px;
+    width: 25px;
+}
+
+#star-3 {
+    position: absolute;
+    top: 75vh;
+    left: 1500px;
+    width: 30px
+}
+
+#twitter-cont {
+    background-image: url("imgs/twitter-const-4.png");
+    background-size: 250px 250px;
+
+    width: 250px;
+    height: 250px;
+
+    position: absolute;
+    top: 20%;
+    left: 500px;
+
+    transform: rotate(20deg);
+    border-radius: 50px;
+}
+
+#twitter-cont:hover {
+
+    background-image: url("imgs/twitter-const-4h.png");
+    background-size: 250px 250px;
+    /* background-color: black;*/
+
+    transform: scale(1) rotate(20deg);
+
+    /* border-radius: 50px;
+    box-shadow: 0px 0px 40px 10px rgba(255,255,255,0.32); */
 }
 
 /*
@@ -52,5 +90,8 @@ html {
         - constellation could be in shape of company logo
 
     also use planets, shooting starts, black holes
+
+    New Idea: Add setInterval Time to display errorTimeOut module as joke
+        - force login... (fake of course)
 
 */
